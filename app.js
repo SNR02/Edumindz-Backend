@@ -16,7 +16,7 @@ app.use(
     extended: true,
   })
 );
-const FRONTEND_URL="http://localhost:3000";
+const FRONTEND_URL="edumindz-frontend-q4mq501df-snr02.vercel.app";
 app.use(cookieParser());
 app.use(
   cors({
