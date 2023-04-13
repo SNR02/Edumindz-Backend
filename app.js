@@ -16,7 +16,7 @@ app.use(
     extended: true,
   })
 );
-const FRONTEND_URL="edumindz-frontend-q4mq501df-snr02.vercel.app";
+const FRONTEND_URL="https://edumindz-frontend.vercel.app/";
 app.use(cookieParser());
 app.use(
   cors({
