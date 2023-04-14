@@ -7,16 +7,7 @@ import cors from "cors";
 config({
   path: "./config/.env",
 });
-const express = require('express');
-const cors = require('cors');
-
 const app = express();
-
-app.use(cors());
-
-app.use(cors({
-  origin: 'https://edumindz-frontend.vercel.app/'
-}));
 
 //using middlewares
 app.use(express.json());
@@ -25,7 +16,7 @@ app.use(
     extended: true,
   })
 );
-const FRONTEND_URL="https://edumindz-frontend.vercel.app/";
+const FRONTEND_URL="http://localhost:3000";
 app.use(cookieParser());
 app.use(
   cors({
